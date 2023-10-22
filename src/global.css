@@ -2,8 +2,9 @@
 
 :root {
     /* Main Colors */
-    --c-background: rgb(12, 19, 37);
-    --c-background-1: rgb(17, 25, 45);
+    --c-background-1: rgb(12, 19, 37);
+    --c-background-2: rgb(17, 25, 45);
+    --c-background-3: rgb(23, 32, 51);
 
     /* Text Colors */
     --c-text: rgb(229, 229, 229);
@@ -23,7 +24,7 @@
 
 body {
     color: var(--c-text);
-    background-color: var(--c-background);
+    background-color: var(--c-background-1);
     font-family: 'Roboto', sans-serif;
 }
 

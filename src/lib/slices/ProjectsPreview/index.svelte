@@ -1,5 +1,5 @@
 <script>
-  /** @type {import("@prismicio/client").Content.AboutSlice} */
+  /** @type {import("@prismicio/client").Content.ProjectsPreviewSlice} */
   export let slice;
 </script>
 
@@ -15,7 +15,7 @@
 
 <style>
   section {
-    background-color: var(--c-background-2);
+    background-color: var(--c-background-3);
   }
 
   article {

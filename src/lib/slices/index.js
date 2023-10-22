@@ -2,8 +2,10 @@
 
 import About from "./About/index.svelte";
 import Introduction from "./Introduction/index.svelte";
+import ProjectsPreview from "./ProjectsPreview/index.svelte";
 
 export const components = {
   about: About,
   introduction: Introduction,
+  projects_preview: ProjectsPreview,
 };

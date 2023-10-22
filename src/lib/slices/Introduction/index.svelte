@@ -30,7 +30,7 @@
 
 <style>
   section {
-    background-color: var( --c-background);
+    background-color: var( --c-background-1);
   }
 
   article {
@@ -70,6 +70,7 @@
 
   .text-container li img:hover {
     transform: translateY(-3px);
+    opacity: 0.65;
   }
 
 

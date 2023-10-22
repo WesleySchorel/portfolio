@@ -1,0 +1,49 @@
+{
+  "id": "projects_preview",
+  "type": "SharedSlice",
+  "name": "ProjectsPreview",
+  "description": "ProjectsPreview",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "text": {
+          "type": "Text",
+          "config": {
+            "label": "text",
+            "placeholder": ""
+          }
+        },
+        "project": {
+          "type": "Image",
+          "config": {
+            "label": "project",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "project_link": {
+          "type": "Link",
+          "config": {
+            "label": "project_link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

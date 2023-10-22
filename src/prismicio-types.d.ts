@@ -4,7 +4,10 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type HomepageDocumentDataSlicesSlice = AboutSlice | IntroductionSlice;
+type HomepageDocumentDataSlicesSlice =
+  | ProjectsPreviewSlice
+  | AboutSlice
+  | IntroductionSlice;
 
 /**
  * Content for homepage documents
@@ -189,6 +192,81 @@ export type IntroductionSlice = prismic.SharedSlice<
   IntroductionSliceVariation
 >;
 
+/**
+ * Primary content in *ProjectsPreview → Primary*
+ */
+export interface ProjectsPreviewSliceDefaultPrimary {
+  /**
+   * title field in *ProjectsPreview → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects_preview.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * text field in *ProjectsPreview → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects_preview.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * project field in *ProjectsPreview → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects_preview.primary.project
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  project: prismic.ImageField<never>;
+
+  /**
+   * project_link field in *ProjectsPreview → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects_preview.primary.project_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  project_link: prismic.LinkField;
+}
+
+/**
+ * Default variation for ProjectsPreview Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectsPreviewSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ProjectsPreviewSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *ProjectsPreview*
+ */
+type ProjectsPreviewSliceVariation = ProjectsPreviewSliceDefault;
+
+/**
+ * ProjectsPreview Shared Slice
+ *
+ * - **API ID**: `projects_preview`
+ * - **Description**: ProjectsPreview
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectsPreviewSlice = prismic.SharedSlice<
+  "projects_preview",
+  ProjectsPreviewSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -211,6 +289,10 @@ declare module "@prismicio/client" {
       IntroductionSliceDefaultPrimary,
       IntroductionSliceVariation,
       IntroductionSliceDefault,
+      ProjectsPreviewSlice,
+      ProjectsPreviewSliceDefaultPrimary,
+      ProjectsPreviewSliceVariation,
+      ProjectsPreviewSliceDefault,
     };
   }
 }
