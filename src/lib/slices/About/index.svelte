@@ -27,4 +27,10 @@
   p {
     width: 65%;
   }
+
+  @media screen and (max-width: 480px) {
+    p {
+      width: 100%;
+    }
+  }
 </style>

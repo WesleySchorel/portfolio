@@ -40,4 +40,10 @@
         flex-direction: column;
         padding-right: 1rem;
     }
+
+    @media screen and (max-width: 480px) {
+    a {
+      font-size: 1rem;
+    }
+  }
 </style>
