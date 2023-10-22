@@ -16,14 +16,14 @@
           "type": "Text",
           "config": {
             "label": "title",
-            "placeholder": ""
+            "placeholder": "Projects"
           }
         },
         "text": {
           "type": "Text",
           "config": {
             "label": "text",
-            "placeholder": ""
+            "placeholder": "These are my recent projects..."
           }
         },
         "project": {

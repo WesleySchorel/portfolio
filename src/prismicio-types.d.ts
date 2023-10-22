@@ -5,6 +5,7 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 type HomepageDocumentDataSlicesSlice =
+  | ContactSlice
   | ProjectsPreviewSlice
   | AboutSlice
   | IntroductionSlice;
@@ -83,7 +84,7 @@ export interface AboutSliceDefaultPrimary {
    * title field in *About → Primary*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: *None*
+   * - **Placeholder**: About
    * - **API ID Path**: about.primary.title
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
@@ -93,7 +94,7 @@ export interface AboutSliceDefaultPrimary {
    * text field in *About → Primary*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: *None*
+   * - **Placeholder**: I started making websites because I wanted to share my hobbies online...
    * - **API ID Path**: about.primary.text
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
@@ -126,6 +127,61 @@ type AboutSliceVariation = AboutSliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type AboutSlice = prismic.SharedSlice<"about", AboutSliceVariation>;
+
+/**
+ * Primary content in *Contact → Primary*
+ */
+export interface ContactSliceDefaultPrimary {
+  /**
+   * title field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Get in touch
+   * - **API ID Path**: contact.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * text field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: If you are interested in collaborating, please don't hesitate to reach out to me...
+   * - **API ID Path**: contact.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for Contact Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContactSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ContactSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Contact*
+ */
+type ContactSliceVariation = ContactSliceDefault;
+
+/**
+ * Contact Shared Slice
+ *
+ * - **API ID**: `contact`
+ * - **Description**: Contact
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContactSlice = prismic.SharedSlice<
+  "contact",
+  ContactSliceVariation
+>;
 
 /**
  * Primary content in *Introduction → Primary*
@@ -200,7 +256,7 @@ export interface ProjectsPreviewSliceDefaultPrimary {
    * title field in *ProjectsPreview → Primary*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: *None*
+   * - **Placeholder**: Projects
    * - **API ID Path**: projects_preview.primary.title
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
@@ -210,7 +266,7 @@ export interface ProjectsPreviewSliceDefaultPrimary {
    * text field in *ProjectsPreview → Primary*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: *None*
+   * - **Placeholder**: These are my recent projects...
    * - **API ID Path**: projects_preview.primary.text
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
@@ -285,6 +341,10 @@ declare module "@prismicio/client" {
       AboutSliceDefaultPrimary,
       AboutSliceVariation,
       AboutSliceDefault,
+      ContactSlice,
+      ContactSliceDefaultPrimary,
+      ContactSliceVariation,
+      ContactSliceDefault,
       IntroductionSlice,
       IntroductionSliceDefaultPrimary,
       IntroductionSliceVariation,

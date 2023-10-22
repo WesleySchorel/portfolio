@@ -1,8 +1,8 @@
 {
-  "id": "about",
+  "id": "contact",
   "type": "SharedSlice",
-  "name": "About",
-  "description": "About",
+  "name": "Contact",
+  "description": "Contact",
   "variations": [
     {
       "id": "default",
@@ -16,14 +16,14 @@
           "type": "Text",
           "config": {
             "label": "title",
-            "placeholder": "About"
+            "placeholder": "Get in touch"
           }
         },
         "text": {
           "type": "Text",
           "config": {
             "label": "text",
-            "placeholder": "I started making websites because I wanted to share my hobbies online..."
+            "placeholder": "If you are interested in collaborating, please don't hesitate to reach out to me..."
           }
         }
       },
