@@ -128,5 +128,15 @@
         "text"
         "avatar";
     }
+
+    .text-container li {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0.5rem 0 0;
+    }
+
+    .text-container li img {
+      width: 2rem;
+    }
   }
 </style>
