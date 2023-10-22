@@ -3,6 +3,7 @@
 :root {
     /* Main Colors */
     --c-background: rgb(12, 19, 37);
+    --c-background-1: rgb(17, 25, 45);
 
     /* Text Colors */
     --c-text: rgb(229, 229, 229);
@@ -26,14 +27,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-main {
-    margin: auto;
-    width: 80%;
-    /* border: 3px solid var(--c-error); */
-}
-
-section {
-    margin: 2rem 0 2rem 0;
+article {
+   padding: 3rem 0 3rem 0;
 }
 
 /* Text Styling */

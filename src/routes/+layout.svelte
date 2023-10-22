@@ -24,7 +24,7 @@
     nav {
         margin: auto;
         width: 80%;
-        padding: 1rem 0 1rem 0;
+        padding: 1rem 0 0rem 0;
     }
 
     nav a {
@@ -38,6 +38,6 @@
     li {
         display: flex;
         flex-direction: column;
-        padding-right: 0.5rem;
+        padding-right: 1rem;
     }
 </style>

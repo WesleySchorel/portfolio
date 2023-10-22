@@ -32,14 +32,6 @@
             "label": "title_end",
             "placeholder": ", a frontend design developer based in the Netherlands"
           }
-        },
-        "circle": {
-          "type": "Image",
-          "config": {
-            "label": "circle",
-            "constraint": {},
-            "thumbnails": []
-          }
         }
       },
       "items": {}
