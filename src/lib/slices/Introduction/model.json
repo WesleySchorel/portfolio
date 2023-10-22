@@ -12,11 +12,33 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "title": {
+        "title_start": {
           "type": "Text",
           "config": {
-            "label": "title",
-            "placeholder": ""
+            "label": "title_start",
+            "placeholder": "Hi, I am"
+          }
+        },
+        "title_name": {
+          "type": "Text",
+          "config": {
+            "label": "title_name",
+            "placeholder": "John Doe"
+          }
+        },
+        "title_end": {
+          "type": "Text",
+          "config": {
+            "label": "title_end",
+            "placeholder": ", a frontend design developer based in the Netherlands"
+          }
+        },
+        "circle": {
+          "type": "Image",
+          "config": {
+            "label": "circle",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },

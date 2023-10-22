@@ -3,12 +3,27 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"title": {
+			"title_start": {
 				"__TYPE__": "FieldContent",
-				"value": "mighty",
-				"type": "Text"
+				"type": "Text",
+				"value": "Hi, I am"
+			},
+			"title_name": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "John Doe"
+			},
+			"title_end": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": ", a frontend design developer based in the Netherlands"
 			}
 		},
-		"items": []
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
 	}
 ]
