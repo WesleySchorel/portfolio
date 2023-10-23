@@ -188,34 +188,14 @@ export type ContactSlice = prismic.SharedSlice<
  */
 export interface IntroductionSliceDefaultPrimary {
   /**
-   * title_start field in *Introduction → Primary*
+   * title field in *Introduction → Primary*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: Hi, I am
-   * - **API ID Path**: introduction.primary.title_start
+   * - **Placeholder**: *None*
+   * - **API ID Path**: introduction.primary.title
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  title_start: prismic.KeyTextField;
-
-  /**
-   * title_name field in *Introduction → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: John Doe
-   * - **API ID Path**: introduction.primary.title_name
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  title_name: prismic.KeyTextField;
-
-  /**
-   * title_end field in *Introduction → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: , a frontend design developer based in the Netherlands
-   * - **API ID Path**: introduction.primary.title_end
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  title_end: prismic.KeyTextField;
+  title: prismic.KeyTextField;
 }
 
 /**

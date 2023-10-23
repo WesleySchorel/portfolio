@@ -10,8 +10,7 @@
   <article>
     <div class="text-container">
       <h1>
-        {slice.primary.title_start}
-        <span>{slice.primary.title_name}</span>{slice.primary.title_end}
+        {@html slice.primary.title}
       </h1>
       <ul>
         <li>
