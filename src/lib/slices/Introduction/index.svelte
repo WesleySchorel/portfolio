@@ -25,7 +25,7 @@
         </li>
       </ul>
     </div>
-    <div class="avatar-container">
+    <div class="img-container">
       <svg
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "text avatar";
+    grid-template-areas: "text img";
     margin: auto;
     width: 80%;
     /* border: 3px solid var(--c-error); */
@@ -108,8 +108,8 @@
     opacity: 0.65;
   }
 
-  .avatar-container {
-    grid-area: avatar;
+  .img-container {
+    grid-area: img;
     display: flex;
     justify-content: right;
     align-items: right;
@@ -123,7 +123,7 @@
       grid-auto-columns: 1fr;
       gap: 0px 0px;
       grid-auto-flow: row;
-      grid-template-areas: "text" "avatar";
+      grid-template-areas: "text" "img";
     }
 
     .text-container li {

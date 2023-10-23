@@ -10,6 +10,7 @@
   <article>
     <h1><span>{slice.primary.title}</span>.</h1>
     <p>{slice.primary.text}</p>
+    <a class="button" prefetch href="https://github.com/WesleySchorel?tab=repositories" target="_blank">My recent work</a>
   </article>
 </section>
 
@@ -26,6 +27,10 @@
 
   p {
     width: 65%;
+  }
+
+  .button {
+    background-color: var(--c-button-background-2);
   }
 
   @media screen and (max-width: 480px) {

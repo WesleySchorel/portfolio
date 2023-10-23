@@ -12,6 +12,11 @@
 				"__TYPE__": "FieldContent",
 				"value": "rear",
 				"type": "Text"
+			},
+			"email": {
+				"__TYPE__": "FieldContent",
+				"value": "pet",
+				"type": "Text"
 			}
 		},
 		"items": []

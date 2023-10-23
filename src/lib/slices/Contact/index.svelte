@@ -10,6 +10,7 @@
   <article>
     <h1><span>{slice.primary.title}</span>.</h1>
     <p>{slice.primary.text}</p>
+    <a class="button" href="mailto:{slice.primary.email}">{slice.primary.email}</a>
   </article>
 </section>
 

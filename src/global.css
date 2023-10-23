@@ -9,6 +9,11 @@
     /* Text Colors */
     --c-text: rgb(229, 229, 229);
 
+    /* Button Colors */
+    --c-button-text: rgb(0, 0, 0);
+    --c-button-background-1: rgb(110, 231, 183);
+    --c-button-background-2: rgb(167, 107, 244);
+
     /* Side Colors */
     --c-error: rgb(255, 0, 0);
 }
@@ -58,6 +63,22 @@ span {
     -webkit-text-fill-color: transparent;
 }
 
+.button {
+    display: inline-block;
+    color: var(--c-button-text);
+    background-color: var(--c-button-background-1);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .button:hover {
+    transform: translateY(-3px);
+    opacity: 0.65;
+  }
+
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
@@ -66,4 +87,9 @@ span {
     p {
         font-size: 1rem;
     }
+
+    a {
+        font-size: 1rem;
+      }
   }
+
