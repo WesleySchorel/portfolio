@@ -9,7 +9,8 @@
 >
   <article>
     <h1><span>{slice.primary.title}</span>.</h1>
-    <p>{slice.primary.text}</p>
+    <p>{@html slice.primary.text}</p>
+    
   </article>
 </section>
 

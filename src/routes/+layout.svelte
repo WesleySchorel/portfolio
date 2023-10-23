@@ -27,10 +27,6 @@
         padding: 1rem 0 0rem 0;
     }
 
-    nav a {
-        color: var(--c-text);
-    }
-
     ul {
         display: flex;
     }
@@ -42,7 +38,7 @@
     }
 
     @media screen and (max-width: 480px) {
-    a {
+    nav a {
       font-size: 1rem;
     }
   }

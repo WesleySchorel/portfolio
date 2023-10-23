@@ -96,7 +96,7 @@
   .text-container li {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 1rem 0 0;
+    padding: 1rem 1rem 0 0;
   }
 
   .text-container li img {
@@ -123,15 +123,13 @@
       grid-auto-columns: 1fr;
       gap: 0px 0px;
       grid-auto-flow: row;
-      grid-template-areas:
-        "text"
-        "avatar";
+      grid-template-areas: "text" "avatar";
     }
 
     .text-container li {
       display: flex;
       flex-direction: column;
-      padding: 1rem 0.5rem 0 0;
+      padding: 0.75rem 0.75rem 0 0;
     }
 
     .text-container li img {
