@@ -5,13 +5,13 @@
 <nav>
     <ul>
         <li>
-            <a prefetch href="/">Home</a>
+            <a href="/">Home</a>
         </li>
         <li>
-            <a prefetch href="/projects">Projects</a>
+            <a href="/projects">Projects</a>
         </li>
         <li>
-            <a prefetch href="/blog">Blog</a>
+            <a href="/blog">Blog</a>
         </li>
     </ul>
 </nav>

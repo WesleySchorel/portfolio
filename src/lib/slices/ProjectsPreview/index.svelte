@@ -10,7 +10,7 @@
   <article>
     <h1><span>{slice.primary.title}</span>.</h1>
     <p>{slice.primary.text}</p>
-    <a class="button" prefetch href="https://github.com/WesleySchorel?tab=repositories" target="_blank">My recent work</a>
+    <a class="button" prefetch href="/projects" target="_blank">My recent work</a>
   </article>
 </section>
 
