@@ -14,12 +14,12 @@
       </h1>
       <ul>
         <li>
-          <a prefetch href="https://github.com/WesleySchorel" target="_blank"
+          <a href="https://github.com/WesleySchorel" target="_blank"
             ><img src="github.svg" alt=" " /></a
           >
         </li>
         <li>
-          <a prefetch href="https://twitter.com/WesleySchorel" target="_blank"
+          <a href="https://twitter.com/WesleySchorel" target="_blank"
             ><img src="x-twitter.svg" alt=" " /></a
           >
         </li>
