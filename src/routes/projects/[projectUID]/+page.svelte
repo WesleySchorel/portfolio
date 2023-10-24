@@ -7,8 +7,7 @@
 <section>
     <article>
         <h1>{data.project.data.title}</h1>
-        <p>The website I made for {data.project.data.title}.</p>
-        
+        <p>{data.project.data.description}</p>
     </article>
 </section>
 

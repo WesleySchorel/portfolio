@@ -14,6 +14,10 @@
     --c-button-background-1: rgb(110, 231, 183);
     --c-button-background-2: rgb(167, 107, 244);
 
+    /* Scrollbar Colors */
+    --c-scrollbar-1: rgb(110, 231, 183);
+    --c-scrollbar-2: rgb(167, 107, 244);
+
     /* Side Colors */
     --c-error: rgb(255, 0, 0);
 }
@@ -34,7 +38,7 @@ body {
 }
 
 article {
-   padding: 3rem 0 3rem 0;
+    padding: 3rem 0 3rem 0;
 }
 
 /* Text Styling */
@@ -56,8 +60,8 @@ a {
 }
 
 span {
-    background: #6EE7B7;
-    background: linear-gradient(to right, #6EE7B7 0%, #A76BF4 100%);
+    background: var(--c-text);
+    background: linear-gradient(to right, rgb(110, 231, 183) 0%, rgb(167, 107, 244) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -67,29 +71,46 @@ span {
     display: inline-block;
     color: var(--c-button-text);
     background-color: var(--c-button-background-1);
+    font-size: 1.5rem;
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 0.75rem;
     margin-top: 1rem;
-  }
+}
 
-  .button:hover {
+.button:hover {
     transform: translateY(-3px);
     opacity: 0.65;
-  }
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(-225deg,
+            var(--c-background-1) 0%,
+            var(--c-scrollbar-1) 25%,
+            var(--c-scrollbar-2) 100%);
+    border-radius: 1rem;
+}
 
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
     }
-    
+
     p {
         font-size: 1rem;
     }
 
     a {
         font-size: 1rem;
-      }
-  }
+    }
 
+    .button {
+        font-size: 1rem;
+    }
+}

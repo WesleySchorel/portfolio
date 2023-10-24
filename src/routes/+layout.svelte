@@ -20,6 +20,9 @@
     <slot />
 </main>
 
+<footer>&#169; {new Date().getFullYear()} Wesley Schorel All Rights Reserved</footer>
+
+
 <style>
     nav {
         margin: auto;
@@ -35,5 +38,12 @@
         display: flex;
         flex-direction: column;
         padding-right: 1rem;
+    }
+
+    footer {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        padding: 1rem;
     }
 </style>

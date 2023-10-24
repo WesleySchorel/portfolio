@@ -7,12 +7,9 @@
   <section>
       <article>
           <h1>Blogs</h1>
-          <p>These are my blogs.</p>
-          
           <ul>
             {#each data.blogs as blog}
             <li><a href="/blogs/{blog.uid}">{blog.data.title}</a></li>
-            
             {/each}
           </ul>
       </article>
