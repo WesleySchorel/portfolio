@@ -96,14 +96,9 @@
     }
 
     button {
-    margin: 1rem 1rem 0 0;
-    font-size: 1.5rem;
-    color: var(--c-text);
-    background-color: var(--c-button-background-3);
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
-    border: 1px solid var(--c-stroke);
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   img {
