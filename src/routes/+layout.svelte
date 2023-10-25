@@ -26,7 +26,7 @@
     nav {
         margin: auto;
         width: 80%;
-        padding: 1rem 0 0rem 0;
+        padding: 1rem 0 0 0;
     }
 
     ul {

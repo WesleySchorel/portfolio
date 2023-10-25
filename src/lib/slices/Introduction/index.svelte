@@ -7,7 +7,7 @@
   data-slice-type={slice.slice_type}
   data-slice-variation={slice.variation}
 >
-  <article>
+  <section class="grid">
     <div class="text-container">
       <h1>
         {@html slice.primary.title}
@@ -60,7 +60,7 @@
         ></svg
       >
     </div>
-  </article>
+  </section>
 </section>
 
 <style>
@@ -68,7 +68,7 @@
     background-color: var(--c-background-1);
   }
 
-  article {
+  section .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -117,7 +117,7 @@
   }
 
   @media screen and (max-width: 480px) {
-    article {
+    section .grid {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
