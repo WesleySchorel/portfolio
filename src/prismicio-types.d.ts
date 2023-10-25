@@ -454,14 +454,14 @@ export interface ProjectsPreviewSliceDefaultItem {
   project_number: prismic.KeyTextField;
 
   /**
-   * project_link field in *ProjectsPreview → Items*
+   * project_image field in *ProjectsPreview → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: projects_preview.items[].project_link
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **API ID Path**: projects_preview.items[].project_image
+   * - **Documentation**: https://prismic.io/docs/field#image
    */
-  project_link: prismic.KeyTextField;
+  project_image: prismic.ImageField<never>;
 }
 
 /**

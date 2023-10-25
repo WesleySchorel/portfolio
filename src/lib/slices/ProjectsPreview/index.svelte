@@ -15,7 +15,7 @@
       <p>{slice.primary.text}</p>
 
       {#each slice.items as item}
-      <button onclick="document.getElementById('projectImg').src='{item.project.url}'">{item.project_number}</button>
+      <button onclick="document.getElementById('projectImg').src='{item.project_image.url}'">{item.project_number}</button>
       {/each}
 
       <a class="link" href="/projects">View all projects →</a>
