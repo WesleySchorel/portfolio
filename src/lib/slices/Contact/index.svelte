@@ -25,4 +25,10 @@
     text-align: center;
     /* border: 3px solid var(--c-error); */
   }
+
+  @media screen and (max-width: 480px) {
+    article {
+      width: 70%;
+    }
+  }
 </style>

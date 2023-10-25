@@ -437,6 +437,41 @@ export interface ProjectsPreviewSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   text: prismic.KeyTextField;
+
+  /**
+   * project_placeholder field in *ProjectsPreview → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects_preview.primary.project_placeholder
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  project_placeholder: prismic.ImageField<never>;
+}
+
+/**
+ * Primary content in *ProjectsPreview → Items*
+ */
+export interface ProjectsPreviewSliceDefaultItem {
+  /**
+   * project_number field in *ProjectsPreview → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects_preview.items[].project_number
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  project_number: prismic.KeyTextField;
+
+  /**
+   * project field in *ProjectsPreview → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects_preview.items[].project
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  project: prismic.ImageField<never>;
 }
 
 /**
@@ -449,7 +484,7 @@ export interface ProjectsPreviewSliceDefaultPrimary {
 export type ProjectsPreviewSliceDefault = prismic.SharedSliceVariation<
   "default",
   Simplify<ProjectsPreviewSliceDefaultPrimary>,
-  never
+  Simplify<ProjectsPreviewSliceDefaultItem>
 >;
 
 /**
@@ -506,6 +541,7 @@ declare module "@prismicio/client" {
       IntroductionSliceDefault,
       ProjectsPreviewSlice,
       ProjectsPreviewSliceDefaultPrimary,
+      ProjectsPreviewSliceDefaultItem,
       ProjectsPreviewSliceVariation,
       ProjectsPreviewSliceDefault,
     };

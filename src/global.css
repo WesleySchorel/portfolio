@@ -16,6 +16,8 @@
     --c-button-text: rgb(0, 0, 0);
     --c-button-background-1: rgb(110, 231, 183);
     --c-button-background-2: rgb(167, 107, 244);
+    --c-button-background-3: rgb(82, 97, 121);
+    --c-button-active-3: rgb(82, 97, 121);
 
     /* Scrollbar Colors */
     --c-scrollbar-1: rgb(110, 231, 183);
@@ -23,6 +25,7 @@
 
     /* Side Colors */
     --c-error: rgb(255, 0, 0);
+    --c-stroke: rgb(85, 115, 165);
 }
 
 * {
@@ -50,6 +53,11 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 p {
@@ -116,6 +124,10 @@ span {
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
     }
 
     p {

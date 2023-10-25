@@ -96,10 +96,11 @@
   .text-container li {
     display: flex;
     flex-direction: column;
-    padding: 1rem 1rem 0 0;
+    padding: 0rem 1rem 0 0;
   }
 
   .text-container li img {
+    height: 2.5rem;
     width: 2.5rem;
   }
 
@@ -129,7 +130,7 @@
     .text-container li {
       display: flex;
       flex-direction: column;
-      padding: 0.75rem 0.75rem 0 0;
+      padding: 0 0.75rem 0 0;
     }
 
     .text-container li img {

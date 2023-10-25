@@ -17,7 +17,8 @@
       {#each slice.items as item}
         <li>
           <a href={item.blog_link}>
-            - {item.blog_title}
+            <h2>{item.blog_title}</h2>
+            <!-- <p>{item.read_time}</p> -->
           </a>
         </li>
       {/each}
@@ -60,5 +61,11 @@
 
   .link {
     color: var(--c-button-background-2);
+  }
+
+  @media screen and (max-width: 480px) {
+    ul {
+    display: block;
+  }
   }
 </style>
