@@ -8,9 +8,10 @@
   data-slice-variation={slice.variation}
 >
   <article>
-    <h1><span>{slice.primary.title}</span>.</h1>
+    <h1>
+      {@html slice.primary.title}.
+    </h1>
     <p>{@html slice.primary.text}</p>
-    
   </article>
 </section>
 

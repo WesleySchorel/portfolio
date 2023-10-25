@@ -9,6 +9,9 @@
     /* Text Colors */
     --c-text: rgb(229, 229, 229);
 
+    /* Blog Colors */
+    --c-blog-background: rgb(30, 41, 59);
+
     /* Button Colors */
     --c-button-text: rgb(0, 0, 0);
     --c-button-background-1: rgb(110, 231, 183);
@@ -46,6 +49,7 @@ article {
 h1 {
     font-size: 3rem;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -84,6 +88,18 @@ span {
     transform: translateY(-3px);
     opacity: 0.65;
 }
+
+.link {
+    display: inline-block;
+    margin: 1rem 0 1rem 0;
+    text-decoration: none;
+    color: var(--c-button-background-1);
+  }
+
+ .link:hover {
+    transform: translateX(3px);
+    opacity: 0.65;
+  }
 
 ::-webkit-scrollbar {
     width: .5rem;

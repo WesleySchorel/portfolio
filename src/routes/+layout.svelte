@@ -22,7 +22,6 @@
 
 <footer>&#169; {new Date().getFullYear()} Wesley Schorel All Rights Reserved</footer>
 
-
 <style>
     nav {
         margin: auto;

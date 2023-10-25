@@ -25,22 +25,6 @@
             "label": "text",
             "placeholder": "These are my recent projects..."
           }
-        },
-        "project": {
-          "type": "Image",
-          "config": {
-            "label": "project",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "project_link": {
-          "type": "Link",
-          "config": {
-            "label": "project_link",
-            "placeholder": "",
-            "select": null
-          }
         }
       },
       "items": {}

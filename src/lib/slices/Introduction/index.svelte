@@ -15,12 +15,12 @@
       <ul>
         <li>
           <a href="https://github.com/WesleySchorel" target="_blank"
-            ><img src="github.svg" alt=" " /></a
+            ><img src="github.svg" alt="Vitit Github" /></a
           >
         </li>
         <li>
           <a href="https://twitter.com/WesleySchorel" target="_blank"
-            ><img src="x-twitter.svg" alt=" " /></a
+            ><img src="x-twitter.svg" alt="Visit Twitter" /></a
           >
         </li>
       </ul>

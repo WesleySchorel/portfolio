@@ -8,9 +8,19 @@
   data-slice-variation={slice.variation}
 >
   <article>
-    <h1><span>{slice.primary.title}</span>.</h1>
-    <p>{slice.primary.text}</p>
-    <a class="button" prefetch href="/projects">Recent work</a>
+    <div class="text">
+      <h1>
+        {@html slice.primary.title}.
+      </h1>
+      <p>{slice.primary.text}</p>
+      <a class="link" href="/projects">View all projects →</a>
+    </div>
+    <div class="img">
+      <img
+        src=""
+        alt=" "
+      />
+    </div>
   </article>
 </section>
 
@@ -20,22 +30,45 @@
   }
 
   article {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "text img";
     margin: auto;
     width: 80%;
     /* border: 3px solid var(--c-error); */
   }
 
-  p {
-    width: 65%;
+  img {
+    height: 14rem;
+    width: auto;
+    margin: 1rem;
   }
 
-  .button {
-    background-color: var(--c-button-background-2);
+  .link {
+    color: var(--c-button-background-1);
+  }
+
+  .text {
+    grid-area: text;
+  }
+
+  .img {
+    grid-area: img;
   }
 
   @media screen and (max-width: 480px) {
-    p {
-      width: 100%;
+    article {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-auto-columns: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas: "text" "img";
     }
   }
 </style>

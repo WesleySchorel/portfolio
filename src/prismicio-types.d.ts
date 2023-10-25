@@ -44,6 +44,7 @@ export type BlogDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<BlogDocumentData>, "blog", Lang>;
 
 type HomepageDocumentDataSlicesSlice =
+  | BlogsPreviewSlice
   | ContactSlice
   | ProjectsPreviewSlice
   | AboutSlice
@@ -214,6 +215,96 @@ type AboutSliceVariation = AboutSliceDefault;
 export type AboutSlice = prismic.SharedSlice<"about", AboutSliceVariation>;
 
 /**
+ * Primary content in *BlogsPreview → Primary*
+ */
+export interface BlogsPreviewSliceDefaultPrimary {
+  /**
+   * title field in *BlogsPreview → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blogs_preview.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * text field in *BlogsPreview → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blogs_preview.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *BlogsPreview → Items*
+ */
+export interface BlogsPreviewSliceDefaultItem {
+  /**
+   * blog_title field in *BlogsPreview → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blogs_preview.items[].blog_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  blog_title: prismic.KeyTextField;
+
+  /**
+   * read_time field in *BlogsPreview → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blogs_preview.items[].read_time
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  read_time: prismic.KeyTextField;
+
+  /**
+   * blog_link field in *BlogsPreview → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blogs_preview.items[].blog_link
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  blog_link: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for BlogsPreview Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BlogsPreviewSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<BlogsPreviewSliceDefaultPrimary>,
+  Simplify<BlogsPreviewSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *BlogsPreview*
+ */
+type BlogsPreviewSliceVariation = BlogsPreviewSliceDefault;
+
+/**
+ * BlogsPreview Shared Slice
+ *
+ * - **API ID**: `blogs_preview`
+ * - **Description**: BlogsPreview
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BlogsPreviewSlice = prismic.SharedSlice<
+  "blogs_preview",
+  BlogsPreviewSliceVariation
+>;
+
+/**
  * Primary content in *Contact → Primary*
  */
 export interface ContactSliceDefaultPrimary {
@@ -346,26 +437,6 @@ export interface ProjectsPreviewSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   text: prismic.KeyTextField;
-
-  /**
-   * project field in *ProjectsPreview → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: projects_preview.primary.project
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  project: prismic.ImageField<never>;
-
-  /**
-   * project_link field in *ProjectsPreview → Primary*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: projects_preview.primary.project_link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  project_link: prismic.LinkField;
 }
 
 /**
@@ -420,6 +491,11 @@ declare module "@prismicio/client" {
       AboutSliceDefaultPrimary,
       AboutSliceVariation,
       AboutSliceDefault,
+      BlogsPreviewSlice,
+      BlogsPreviewSliceDefaultPrimary,
+      BlogsPreviewSliceDefaultItem,
+      BlogsPreviewSliceVariation,
+      BlogsPreviewSliceDefault,
       ContactSlice,
       ContactSliceDefaultPrimary,
       ContactSliceVariation,

@@ -12,36 +12,6 @@
 				"__TYPE__": "FieldContent",
 				"value": "mine",
 				"type": "Text"
-			},
-			"project": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
-					"width": 4480,
-					"height": 4480
-				},
-				"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
-				"width": 4480,
-				"height": 4480,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"project_link": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "https://slicemachine.dev"
-				}
 			}
 		},
 		"items": []
