@@ -104,7 +104,7 @@
   img {
     height: 12rem;
     width: auto;
-    margin: 0rem;
+    margin: 1rem 0 0 0;
     border: 1px solid var(--c-stroke);
   }
   }

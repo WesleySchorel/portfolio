@@ -35,13 +35,6 @@
             "placeholder": ""
           }
         },
-        "read_time": {
-          "type": "Text",
-          "config": {
-            "label": "read_time",
-            "placeholder": ""
-          }
-        },
         "blog_link": {
           "type": "Text",
           "config": {

@@ -18,7 +18,6 @@
         <li>
           <a href={item.blog_link}>
             <h2>{item.blog_title}</h2>
-            <!-- <p>{item.read_time}</p> -->
           </a>
         </li>
       {/each}

@@ -254,16 +254,6 @@ export interface BlogsPreviewSliceDefaultItem {
   blog_title: prismic.KeyTextField;
 
   /**
-   * read_time field in *BlogsPreview → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blogs_preview.items[].read_time
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  read_time: prismic.KeyTextField;
-
-  /**
    * blog_link field in *BlogsPreview → Items*
    *
    * - **Field Type**: Text
@@ -464,14 +454,14 @@ export interface ProjectsPreviewSliceDefaultItem {
   project_number: prismic.KeyTextField;
 
   /**
-   * project field in *ProjectsPreview → Items*
+   * project_link field in *ProjectsPreview → Items*
    *
-   * - **Field Type**: Image
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: projects_preview.items[].project
-   * - **Documentation**: https://prismic.io/docs/field#image
+   * - **API ID Path**: projects_preview.items[].project_link
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  project: prismic.ImageField<never>;
+  project_link: prismic.KeyTextField;
 }
 
 /**

@@ -43,12 +43,11 @@
             "placeholder": ""
           }
         },
-        "project": {
-          "type": "Image",
+        "project_link": {
+          "type": "Text",
           "config": {
-            "label": "project",
-            "constraint": {},
-            "thumbnails": []
+            "label": "project_link",
+            "placeholder": ""
           }
         }
       }
