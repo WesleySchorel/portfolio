@@ -1,17 +1,23 @@
 <script>
     import global from "../global.css";
+    import { page } from "$app/stores";
 </script>
 
 <nav>
     <ul>
         <li>
-            <a href="/">Home</a>
+            <a href="/" class:active={$page.url.pathname === "/"}>Home</a>
         </li>
         <li>
-            <a href="/projects">Projects</a>
+            <a
+                href="/projects"
+                class:active={$page.url.pathname === "/projects"}>Projects</a
+            >
         </li>
         <li>
-            <a href="/blogs">Blog</a>
+            <a href="/blogs" class:active={$page.url.pathname === "/blogs"}
+                >Blogs</a
+            >
         </li>
     </ul>
 </nav>
@@ -20,7 +26,9 @@
     <slot />
 </main>
 
-<footer>&#169; {new Date().getFullYear()} Wesley Schorel All Rights Reserved</footer>
+<footer>
+    &#169; {new Date().getFullYear()} Wesley Schorel &#183; All Rights Reserved
+</footer>
 
 <style>
     nav {
@@ -33,10 +41,24 @@
         display: flex;
     }
 
+    ul a {
+        text-decoration: none;
+    }
+
+    ul a:hover {
+        opacity: 0.65;
+        transition: 0.2s;
+    }
+
     li {
         display: flex;
         flex-direction: column;
         padding-right: 1rem;
+        color: var(--c-nav-link);
+    }
+
+    li .active {
+        color: var(--c-nav-link-active);
     }
 
     footer {

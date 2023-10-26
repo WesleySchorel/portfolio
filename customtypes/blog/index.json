@@ -25,6 +25,13 @@
           "label": "description",
           "placeholder": ""
         }
+      },
+      "read_time": {
+        "type": "Text",
+        "config": {
+          "label": "read_time",
+          "placeholder": ""
+        }
       }
     }
   }

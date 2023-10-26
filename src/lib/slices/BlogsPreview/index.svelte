@@ -50,6 +50,7 @@
     font-size: 1.5rem;
     text-align: left;
     border-radius: 5px;
+    border: 1px solid var(--c-stroke);
     padding: 1rem;
     margin: 1rem 1rem 0 0;
   }

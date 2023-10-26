@@ -103,11 +103,13 @@
   .text-container li img {
     height: 2.5rem;
     width: 2.5rem;
+    transition: 0.2s;
   }
 
   .text-container li img:hover {
     transform: translateY(-3px);
     opacity: 0.65;
+    transition: 0.2s;
   }
 
   .img-container {

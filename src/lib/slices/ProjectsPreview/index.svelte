@@ -53,12 +53,14 @@
     width: 3.5rem;
     border-radius: 50%;
     border: 1px solid var(--c-stroke);
+    transition: 0.2s;
   }
 
   button:hover {
     transform: translateY(-3px);
     opacity: 0.65;
     cursor: pointer;
+    transition: 0.2s;
   }
 
   img {
@@ -102,10 +104,9 @@
   }
 
   img {
-    height: 12rem;
+    height: 10rem;
     width: auto;
     margin: 1rem 0 0 0;
-    border: 1px solid var(--c-stroke);
   }
   }
 </style>

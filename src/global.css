@@ -9,6 +9,10 @@
     /* Text Colors */
     --c-text: rgb(229, 229, 229);
 
+    /* Nav Colors */
+    --c-nav-link: rgb(229, 229, 229);
+    --c-nav-link-active: rgb(110, 231, 183);
+
     /* Blog Colors */
     --c-blog-background: rgb(30, 41, 59);
 
@@ -90,11 +94,13 @@ span {
     border-radius: 5px;
     padding: 0.75rem;
     margin-top: 1rem;
+    transition: 0.2s;
 }
 
 .button:hover {
     transform: translateY(-3px);
     opacity: 0.65;
+    transition: 0.2s;
 }
 
 .link {
@@ -102,11 +108,13 @@ span {
     margin: 1rem 0 0 0;
     text-decoration: none;
     color: var(--c-button-background-1);
+    transition: 0.2s;
   }
 
  .link:hover {
     transform: translateX(3px);
     opacity: 0.65;
+    transition: 0.2s;
   }
 
 ::-webkit-scrollbar {

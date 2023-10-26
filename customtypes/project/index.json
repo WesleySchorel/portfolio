@@ -25,6 +25,14 @@
           "label": "description",
           "placeholder": ""
         }
+      },
+      "project_image": {
+        "type": "Image",
+        "config": {
+          "label": "project_image",
+          "constraint": {},
+          "thumbnails": []
+        }
       }
     }
   }
