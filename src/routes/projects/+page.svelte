@@ -7,25 +7,20 @@
 <section>
   <article>
     <h1>Projects</h1>
-    <ul>
+    <div class="projects-container">
       {#each data.projects as project}
         <a href="/projects/{project.uid}">
-          <li>
-            <div class="img">
-              <img
-                src={project.data.project_image.url}
-                alt={project.data.title}
-              />
-            </div>
-
-            <div class="text">
-              <h2>{project.data.title}</h2>
-              <p>{project.data.description}</p>
-            </div>
-          </li>
+          <div class="project">
+            <img
+              src={project.data.project_image.url}
+              alt={project.data.title}
+            />
+            <h2>{project.data.title}</h2>
+            <p>{project.data.description}</p>
+          </div>
         </a>
       {/each}
-    </ul>
+    </div>
   </article>
 </section>
 
@@ -40,55 +35,48 @@
     text-decoration: none;
   }
 
-  li {
+  img {
+    height: 14rem;
+    width: auto;
+  }
+
+  .projects-container {
+    color: var(--c-pink);
+    width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "img text";
-    padding: 0 0 2rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
 
-  .img {
-    grid-area: img;
+  .project {
+    border: 1px solid var(--c-stroke);
+    border-radius: 5px;
+    background-color: var(--c-blog-background);
+    transition: 0.2s;
   }
 
-  .text {
-    grid-area: text;
-    padding: 1rem;
+  .project:hover {
+    transform: translateY(-6px);
+    opacity: 0.65;
+    transition: 0.2s;
+  }
+
+  h2 {
+    padding: 1rem 0 0 1rem;
   }
 
   p {
-    margin: 1rem 0 0 0;
-  }
-
-  img {
-    height: 22rem;
-    width: auto;
-    border: 1px solid var(--c-stroke);
+    padding: 1rem;
   }
 
   @media screen and (max-width: 480px) {
-    li {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-auto-columns: 1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas: "img" "text";
+    .projects-container {
+      grid-template-columns: repeat(1, 1fr);
     }
 
     img {
       height: 10rem;
       width: auto;
-    }
-
-    .text {
-      grid-area: text;
-      padding: 1rem 0 0 0;
     }
   }
 </style>

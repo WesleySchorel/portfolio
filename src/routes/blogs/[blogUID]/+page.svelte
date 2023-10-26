@@ -7,7 +7,7 @@
   <section>
       <article>
           <h1>{data.blog.data.title}</h1>
-          <p>My blog post about {data.blog.data.description}.</p>
+          <p>{data.blog.data.description}.</p>
           
       </article>
   </section>

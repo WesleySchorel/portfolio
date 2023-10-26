@@ -46,7 +46,7 @@
 
   li {
     background-color: var(--c-blog-background);
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 0rem 0 2rem 0;
     border-radius: 5px;
     border: 1px solid var(--c-stroke);
