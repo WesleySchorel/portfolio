@@ -77,6 +77,7 @@
     grid-auto-flow: row;
     grid-template-areas: "text img";
     margin: auto;
+    padding: 3rem 0 3rem 0;
     width: 80%;
     /* border: 3px solid var(--c-error); */
   }

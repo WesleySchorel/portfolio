@@ -42,7 +42,7 @@
     footer {
         text-align: center;
         margin: auto;
-        width: 50%;
+        width: 100%;
         padding: 1rem;
     }
 </style>
