@@ -1,25 +1,21 @@
 <script>
     import { page } from "$app/stores";
-    import BlossomSelfie from "$lib/assets/BlossomSelfie.jpeg";
-    import GithubIcon from "$lib/assets/Github.svg";
-    // import LinkedinIcon from "$lib/assets/Linkedin.svg";
     import Tape from "$lib/assets/Tape.svg";
+    import BlossomSelfie from "$lib/assets/BlossomSelfie.jpeg";
   </script>
   
   <footer>
     <div class="text">
       <h2>LET'S CONNECT</h2>
       <a href="mailto:wesleyschorel@gmail.com">wesleyschorel@gmail.com</a>
-      <a href="https://github.com/WesleySchorel"><img src={GithubIcon} alt="Github" /></a>
-      <!-- <a href="https://www.linkedin.com/in/wesley-schorel-387410299/"><img src={LinkedinIcon} alt="Linkedin" /></a> -->
     </div>
-  
-    <span>© {new Date().getFullYear()} Wesley Schorel · All Rights Reserved</span>
   
     <div class="media">
       <img class="tape" src={Tape} alt=" " />
       <img class="poloroid" src={BlossomSelfie} alt="Wesley in a Blossom Forest" />
     </div>
+
+    <span>© {new Date().getFullYear()} Wesley Schorel · All Rights Reserved</span>
   </footer>
   
   <style>
@@ -54,8 +50,7 @@
       text-align: center;
       text-decoration: none;
       color: var(--c-opossing-text);
-      padding: 2rem;
-      margin-right: 1rem;
+      padding: 2rem 4rem 2rem 4rem;
       border: 0.125rem solid rgb(255, 255, 255);
       border-radius: 100rem;
       transition: 0.3s;
@@ -69,11 +64,6 @@
       color: var(--c-opossing-text);
       opacity: 0.25;
       padding: 0 0 2rem 4rem;
-    }
-  
-    .text img {
-      width: 2.2rem;
-      height: 2rem;
     }
   
     .tape {
