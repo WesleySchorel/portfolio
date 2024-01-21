@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   /** @type {import("@prismicio/client").Content.FeaturedBlogsSlice} */
   export let slice;
 </script>
@@ -9,4 +9,4 @@
 >
   Placeholder component for {slice.slice_type} (variation: {slice.variation})
   Slices
-</section>
+</section> -->
