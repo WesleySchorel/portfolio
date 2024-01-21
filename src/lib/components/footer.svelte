@@ -2,7 +2,7 @@
     import { page } from "$app/stores";
     import BlossomSelfie from "$lib/assets/BlossomSelfie.jpeg";
     import GithubIcon from "$lib/assets/Github.svg";
-    import LinkedinIcon from "$lib/assets/Linkedin.svg";
+    // import LinkedinIcon from "$lib/assets/Linkedin.svg";
     import Tape from "$lib/assets/Tape.svg";
   </script>
   
@@ -11,7 +11,7 @@
       <h2>LET'S CONNECT</h2>
       <a href="mailto:wesleyschorel@gmail.com">wesleyschorel@gmail.com</a>
       <a href="https://github.com/WesleySchorel"><img src={GithubIcon} alt="Github" /></a>
-      <a href="https://www.linkedin.com/in/wesley-schorel-387410299/"><img src={LinkedinIcon} alt="Linkedin" /></a>
+      <!-- <a href="https://www.linkedin.com/in/wesley-schorel-387410299/"><img src={LinkedinIcon} alt="Linkedin" /></a> -->
     </div>
   
     <span>© {new Date().getFullYear()} Wesley Schorel · All Rights Reserved</span>
