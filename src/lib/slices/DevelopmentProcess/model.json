@@ -1,0 +1,16 @@
+{
+  "id": "development_process",
+  "type": "SharedSlice",
+  "name": "DevelopmentProcess",
+  "description": "DevelopmentProcess",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

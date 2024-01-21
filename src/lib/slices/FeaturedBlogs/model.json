@@ -1,0 +1,16 @@
+{
+  "id": "featured_blogs",
+  "type": "SharedSlice",
+  "name": "FeaturedBlogs",
+  "description": "FeaturedBlogs",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

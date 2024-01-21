@@ -18,19 +18,19 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "blogs_preview": {
+            "featured_blogs": {
               "type": "SharedSlice"
             },
-            "contact": {
+            "site_preview": {
               "type": "SharedSlice"
             },
-            "projects_preview": {
+            "development_process": {
               "type": "SharedSlice"
             },
-            "about": {
+            "featured_projects": {
               "type": "SharedSlice"
             },
-            "introduction": {
+            "landing": {
               "type": "SharedSlice"
             }
           }

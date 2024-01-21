@@ -1,35 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
 :root {
-    /* Main Colors */
-    --c-background-1: rgb(12, 19, 37);
-    --c-background-2: rgb(17, 25, 45);
-    --c-background-3: rgb(23, 32, 51);
+    /* For brighter backgrounds */
+    --c-background: rgb(255, 255, 255);
+    --c-primary-text: rgb(26, 26, 26);
+    --c-secondary-text: rgb(26, 26, 26);
 
-    /* Text Colors */
-    --c-text: rgb(229, 229, 229);
-
-    /* Nav Colors */
-    --c-nav-link: rgb(229, 229, 229);
-    --c-nav-link-active: rgb(110, 231, 183);
-
-    /* Blog Colors */
-    --c-blog-background: rgb(30, 41, 59);
-
-    /* Button Colors */
-    --c-button-text: rgb(0, 0, 0);
-    --c-button-background-1: rgb(110, 231, 183);
-    --c-button-background-2: rgb(167, 107, 244);
-    --c-button-background-3: rgb(82, 97, 121);
-    --c-button-active-3: rgb(82, 97, 121);
-
-    /* Scrollbar Colors */
-    --c-scrollbar-1: rgb(110, 231, 183);
-    --c-scrollbar-2: rgb(167, 107, 244);
-
-    /* Side Colors */
-    --c-error: rgb(255, 0, 0);
-    --c-stroke: rgb(85, 115, 165);
+    /* For darker backgrounds */
+    --c-opossing-text: rgb(255, 255, 255);
+    --c-opossing-background: rgb(26, 26, 26);
+    --c-opossing-hover: rgb(255, 225, 236);
 }
 
 * {
@@ -39,118 +19,8 @@
     scroll-behavior: smooth;
 }
 
-/* Segments Styling */
-
 body {
-    color: var(--c-text);
-    background-color: var(--c-background-1);
-    font-family: 'Roboto', sans-serif;
-}
-
-article {
-    padding: 5rem 0 5rem 0;
-}
-
-/* Text Styling */
-
-h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-p {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-a {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--c-text);
-}
-
-span {
-    background: var(--c-text);
-    background: linear-gradient(to right, rgb(110, 231, 183) 0%, rgb(167, 107, 244) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.button {
-    display: inline-block;
-    color: var(--c-button-text);
-    background-color: var(--c-button-background-1);
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 0.75rem;
-    margin-top: 1rem;
-    transition: 0.2s;
-}
-
-.button:hover {
-    transform: translateY(-3px);
-    opacity: 0.65;
-    transition: 0.2s;
-}
-
-.link {
-    display: inline-block;
-    margin: 1rem 0 0 0;
-    text-decoration: none;
-    color: var(--c-button-background-1);
-    transition: 0.2s;
-  }
-
- .link:hover {
-    transform: translateX(3px);
-    opacity: 0.65;
-    transition: 0.2s;
-  }
-
-::-webkit-scrollbar {
-    width: .5rem;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(-225deg,
-            var(--c-background-1) 0%,
-            var(--c-scrollbar-1) 25%,
-            var(--c-scrollbar-2) 100%);
-    border-radius: 1rem;
-}
-
-@media screen and (max-width: 480px) {
-    article {
-        padding: 4rem 0 4rem 0;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    a {
-        font-size: 1rem;
-    }
-
-    .button {
-        font-size: 1rem;
-    }
+    background-color: var(--c-background);
+    color: var(--c-primary-text);
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
