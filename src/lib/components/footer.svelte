@@ -36,7 +36,6 @@
     .text {
       grid-area: text;
       padding: 12rem 0 0 4rem;
-      display: table-column-group;
     }
   
     .media {
@@ -73,8 +72,8 @@
     }
   
     .text img {
-      width: 2.25rem;
-      height: 1.5rem;
+      width: 2.2rem;
+      height: 2rem;
     }
   
     .tape {
