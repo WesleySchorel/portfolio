@@ -53,7 +53,7 @@
 <style>
   footer {
     background-color: var(--c-opossing-background);
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 6rem 2rem 2rem 2rem;
   }
 
   h2 {
@@ -77,7 +77,7 @@
     text-align: center;
     text-decoration: none;
 
-    margin: 0 0.7rem 1rem 0;
+    margin: 0 0.7rem 0.7rem 0;
     padding: 1rem;
 
     border: 0.125rem solid rgb(255, 255, 255);
@@ -98,16 +98,16 @@
   .media {
     display: flex;
     justify-content: center;
-    padding: 5rem 0 3rem 0;
+    padding: 3rem 0 3rem 0;
   }
 
   .tape {
-    width: 10rem;
+    width: 6rem;
     height: auto;
 
     position: absolute;
     z-index: 1;
-    margin-top: -3rem;
+    margin-top: -1.75rem;
     margin-left: 1rem;
     transform: rotate(4deg);
   }
@@ -136,12 +136,8 @@
 
     a {
       font-size: 2rem;
-      text-align: center;
-      text-decoration: none;
       color: var(--c-opossing-text);
       padding: 2rem 2.5rem 2rem 2.5rem;
-      border: 0.125rem solid rgb(255, 255, 255);
-      border-radius: 100rem;
       transition: 0.3s;
     }
 
