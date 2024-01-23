@@ -41,7 +41,7 @@
 
   h2 {
     color: var(--c-opossing-text);
-    font-size: 4.375rem;
+    font-size: 3.375rem;
   }
 
   .text {
@@ -55,12 +55,12 @@
     flex-direction: column;
 
     color: var(--c-opossing-text);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     text-decoration: none;
 
     margin: 0 1rem 1.5rem 0;
-    padding: 1.5rem;
+    padding: 1rem;
 
     border: 0.125rem solid rgb(255, 255, 255);
     border-radius: 100rem;
@@ -72,6 +72,7 @@
     display: flex;
     justify-content: center;
 
+    font-size: 1rem;
     color: var(--c-opossing-text);
     opacity: 0.35;
   }
@@ -94,8 +95,8 @@
   }
 
   .poloroid {
-    width: 18rem;
-    height: 22rem;
+    width: 16rem;
+    height: 18rem;
     object-fit: cover;
     border: 1rem solid rgb(255, 255, 255);
     transform: rotate(4deg);
