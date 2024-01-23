@@ -53,7 +53,7 @@
 <style>
   footer {
     background-color: var(--c-opossing-background);
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
   }
 
   h2 {
