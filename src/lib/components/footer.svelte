@@ -113,8 +113,8 @@
   }
 
   .poloroid {
-    width: 14rem;
-    height: 15rem;
+    width: 15rem;
+    height: 16rem;
     object-fit: cover;
     border: 0.7rem solid rgb(255, 255, 255);
     transform: rotate(4deg);
@@ -127,7 +127,7 @@
       grid-auto-flow: row;
       grid-template-areas: "text media";
 
-      padding: 6rem 4rem 2rem 4rem;
+      padding: 6rem 5rem 2rem 5rem;
     }
 
     h2 {
