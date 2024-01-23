@@ -77,7 +77,7 @@
     text-align: center;
     text-decoration: none;
 
-    margin: 0 1rem 1rem 0;
+    margin: 0 0.7rem 1rem 0;
     padding: 1rem;
 
     border: 0.125rem solid rgb(255, 255, 255);
@@ -90,7 +90,7 @@
     display: flex;
     justify-content: center;
 
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: var(--c-opossing-text);
     opacity: 0.35;
   }
@@ -98,7 +98,7 @@
   .media {
     display: flex;
     justify-content: center;
-    padding: 5rem 0 4rem 0;
+    padding: 5rem 0 3rem 0;
   }
 
   .tape {
@@ -114,7 +114,7 @@
 
   .poloroid {
     width: 15rem;
-    height: 16rem;
+    height: 17rem;
     object-fit: cover;
     border: 0.7rem solid rgb(255, 255, 255);
     transform: rotate(4deg);
@@ -151,6 +151,7 @@
 
     span {
       justify-content: left;
+      font-size: 1rem;
     }
 
     .text {
