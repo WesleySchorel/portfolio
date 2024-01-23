@@ -53,7 +53,7 @@
 <style>
   footer {
     background-color: var(--c-opossing-background);
-    padding: 6rem 2rem 2rem 2rem;
+    padding: 8rem 2rem 2rem 2rem;
   }
 
   h2 {
@@ -77,7 +77,7 @@
     text-align: center;
     text-decoration: none;
 
-    margin: 0 0.7rem 0.7rem 0;
+    margin: 0 0.7rem 1rem 0;
     padding: 1rem;
 
     border: 0.125rem solid rgb(255, 255, 255);
@@ -98,7 +98,7 @@
   .media {
     display: flex;
     justify-content: center;
-    padding: 3rem 0 3rem 0;
+    padding: 5rem 0 4rem 0;
   }
 
   .tape {
