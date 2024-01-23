@@ -80,23 +80,23 @@
   .media {
     display: flex;
     justify-content: center;
-    padding: 3rem 0 3.5rem 0;
+    padding: 4.5rem 0 2rem 0;
   }
 
   .tape {
-    width: 6rem;
+    width: 10rem;
     height: auto;
 
     position: absolute;
     z-index: 1;
-    margin-top: -1.75rem;
+    margin-top: -3rem;
     margin-left: 1rem;
     transform: rotate(4deg);
   }
 
   .poloroid {
-    width: 12rem;
-    height: 14rem;
+    width: 13rem;
+    height: 15rem;
     object-fit: cover;
     border: 0.7rem solid rgb(255, 255, 255);
     transform: rotate(4deg);
