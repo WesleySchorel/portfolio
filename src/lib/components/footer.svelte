@@ -7,9 +7,10 @@
 <div style="margin-top: 50rem;"></div>
 
 <footer>
+  <div class="text">
     <h2>LET'S CONNECT</h2>
       <br>
-    <div class="text">
+    
       <a href="mailto:wesleyschorel@gmail.com">wesleyschorel@gmail.com</a>
       <a href="mailto:wesleyschorel@gmail.com">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
