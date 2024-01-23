@@ -59,7 +59,7 @@
     text-align: center;
     text-decoration: none;
 
-    margin: 0 1rem 1.5rem 0;
+    margin: 0 1rem 1rem 0;
     padding: 1rem;
 
     border: 0.125rem solid rgb(255, 255, 255);
@@ -72,7 +72,7 @@
     display: flex;
     justify-content: center;
 
-    font-size: 0.5rem;
+    font-size: 1rem;
     color: var(--c-opossing-text);
     opacity: 0.35;
   }
@@ -95,7 +95,7 @@
   }
 
   .poloroid {
-    width: 13rem;
+    width: 14rem;
     height: 15rem;
     object-fit: cover;
     border: 0.7rem solid rgb(255, 255, 255);
