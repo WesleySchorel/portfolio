@@ -72,7 +72,7 @@
     display: flex;
     justify-content: center;
 
-    font-size: 1rem;
+    font-size: 0.5rem;
     color: var(--c-opossing-text);
     opacity: 0.35;
   }
@@ -80,25 +80,25 @@
   .media {
     display: flex;
     justify-content: center;
-    padding: 4.5rem 0 3.5rem 0;
+    padding: 3rem 0 3.5rem 0;
   }
 
   .tape {
-    width: 10rem;
+    width: 6rem;
     height: auto;
 
     position: absolute;
     z-index: 1;
-    margin-top: -3rem;
+    margin-top: -1.75rem;
     margin-left: 1rem;
     transform: rotate(4deg);
   }
 
   .poloroid {
-    width: 16rem;
-    height: 18rem;
+    width: 12rem;
+    height: 14rem;
     object-fit: cover;
-    border: 1rem solid rgb(255, 255, 255);
+    border: 0.7rem solid rgb(255, 255, 255);
     transform: rotate(4deg);
   }
 </style>
