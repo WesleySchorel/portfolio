@@ -80,7 +80,7 @@
   .media {
     display: flex;
     justify-content: center;
-    padding: 4.5rem 0 2rem 0;
+    padding: 5rem 0 4rem 0;
   }
 
   .tape {
