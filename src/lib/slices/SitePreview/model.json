@@ -10,7 +10,25 @@
       "docURL": "...",
       "version": "initial",
       "description": "Default",
-      "imageUrl": ""
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "laptop": {
+          "type": "Image",
+          "config": {
+            "label": "laptop",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
     }
   ]
 }

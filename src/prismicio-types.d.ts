@@ -215,6 +215,46 @@ export type DevelopmentProcessSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *FeaturedBlogs → Primary*
+ */
+export interface FeaturedBlogsSliceDefaultPrimary {
+  /**
+   * title field in *FeaturedBlogs → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured_blogs.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *FeaturedBlogs → Items*
+ */
+export interface FeaturedBlogsSliceDefaultItem {
+  /**
+   * blog_title field in *FeaturedBlogs → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured_blogs.items[].blog_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  blog_title: prismic.KeyTextField;
+
+  /**
+   * blog_link field in *FeaturedBlogs → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured_blogs.items[].blog_link
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  blog_link: prismic.KeyTextField;
+}
+
+/**
  * Default variation for FeaturedBlogs Slice
  *
  * - **API ID**: `default`
@@ -223,8 +263,8 @@ export type DevelopmentProcessSlice = prismic.SharedSlice<
  */
 export type FeaturedBlogsSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
-  never
+  Simplify<FeaturedBlogsSliceDefaultPrimary>,
+  Simplify<FeaturedBlogsSliceDefaultItem>
 >;
 
 /**
@@ -305,6 +345,31 @@ export type LandingSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *SitePreview → Primary*
+ */
+export interface SitePreviewSliceDefaultPrimary {
+  /**
+   * title field in *SitePreview → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: site_preview.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * laptop field in *SitePreview → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: site_preview.primary.laptop
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  laptop: prismic.ImageField<never>;
+}
+
+/**
  * Default variation for SitePreview Slice
  *
  * - **API ID**: `default`
@@ -313,7 +378,7 @@ export type LandingSlice = prismic.SharedSlice<
  */
 export type SitePreviewSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
+  Simplify<SitePreviewSliceDefaultPrimary>,
   never
 >;
 
@@ -356,6 +421,8 @@ declare module "@prismicio/client" {
       DevelopmentProcessSliceVariation,
       DevelopmentProcessSliceDefault,
       FeaturedBlogsSlice,
+      FeaturedBlogsSliceDefaultPrimary,
+      FeaturedBlogsSliceDefaultItem,
       FeaturedBlogsSliceVariation,
       FeaturedBlogsSliceDefault,
       FeaturedProjectsSlice,
@@ -365,6 +432,7 @@ declare module "@prismicio/client" {
       LandingSliceVariation,
       LandingSliceDefault,
       SitePreviewSlice,
+      SitePreviewSliceDefaultPrimary,
       SitePreviewSliceVariation,
       SitePreviewSliceDefault,
     };

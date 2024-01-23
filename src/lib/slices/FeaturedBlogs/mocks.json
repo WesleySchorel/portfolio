@@ -2,7 +2,35 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
-		"primary": {},
-		"items": []
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "dollar",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"blog_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "bark",
+							"type": "Text"
+						}
+					],
+					[
+						"blog_link",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "steep",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
 	}
 ]

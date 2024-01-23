@@ -4,13 +4,11 @@
   import BlossomSelfie from "$lib/assets/BlossomSelfie.jpeg";
 </script>
 
-<div style="margin-top: 50rem;" />
-
 <footer>
   <div class="text">
     <h2>LET'S CONNECT</h2>
-    <a href="mailto:wesleyschorel@gmail.com">wesleyschorel@gmail.com</a>
-    <a href="mailto:wesleyschorel@gmail.com">
+    <a href="mailto:wesleyschorel@gmail.com" target="_blank">wesleyschorel@gmail.com</a>
+    <a href="https://github.com/WesleySchorel">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -23,7 +21,7 @@
         />
       </svg>
     </a>
-    <a href="mailto:wesleyschorel@gmail.com">
+    <a href="https://www.linkedin.com/in/wesley-schorel-387410299/" target="_blank">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -53,7 +51,7 @@
 <style>
   footer {
     background-color: var(--c-opossing-background);
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 6rem 2rem 2rem 2rem;
   }
 
   h2 {

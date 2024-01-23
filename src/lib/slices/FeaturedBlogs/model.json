@@ -10,7 +10,32 @@
       "docURL": "...",
       "version": "initial",
       "description": "Default",
-      "imageUrl": ""
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "blog_title": {
+          "type": "Text",
+          "config": {
+            "label": "blog_title",
+            "placeholder": ""
+          }
+        },
+        "blog_link": {
+          "type": "Text",
+          "config": {
+            "label": "blog_link",
+            "placeholder": ""
+          }
+        }
+      }
     }
   ]
 }
