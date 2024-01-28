@@ -315,6 +315,41 @@ export type FeaturedProjectsSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *Landing → Primary*
+ */
+export interface LandingSliceDefaultPrimary {
+  /**
+   * title field in *Landing → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * hero_image field in *Landing → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.primary.hero_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  hero_image: prismic.ImageField<never>;
+
+  /**
+   * description field in *Landing → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+}
+
+/**
  * Default variation for Landing Slice
  *
  * - **API ID**: `default`
@@ -323,7 +358,7 @@ export type FeaturedProjectsSlice = prismic.SharedSlice<
  */
 export type LandingSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
+  Simplify<LandingSliceDefaultPrimary>,
   never
 >;
 
@@ -429,6 +464,7 @@ declare module "@prismicio/client" {
       FeaturedProjectsSliceVariation,
       FeaturedProjectsSliceDefault,
       LandingSlice,
+      LandingSliceDefaultPrimary,
       LandingSliceVariation,
       LandingSliceDefault,
       SitePreviewSlice,

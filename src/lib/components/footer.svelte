@@ -7,7 +7,7 @@
 <footer>
   <div class="text">
     <h2>LET'S CONNECT</h2>
-    <a href="mailto:wesleyschorel@gmail.com" target="_blank">wesleyschorel@gmail.com</a>
+    <a href="mailto:wesleyschorel@gmail.com" class="mail" target="_blank">wesleyschorel@gmail.com</a>
     <a href="https://github.com/WesleySchorel">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +97,11 @@
     display: flex;
     justify-content: center;
     padding: 5rem 0 4rem 0;
+    transition: 0.3s;
+  }
+
+  .media:hover {
+    transform: rotate(1deg);
   }
 
   .tape {
@@ -135,12 +140,16 @@
     a {
       font-size: 2rem;
       color: var(--c-opossing-text);
-      padding: 2rem 2.5rem 2rem 2.5rem;
+      padding: 2rem 2rem 2rem 2rem;
       transition: 0.3s;
     }
 
     a:hover {
       border-color: var(--c-opossing-hover);
+    }
+
+    .mail {
+      padding: 0 4rem 0 4rem;
     }
 
     span {
@@ -149,7 +158,7 @@
     }
 
     .text {
-      padding: 6rem 0rem 8rem 0rem;
+      padding: 6rem 0rem 10rem 0rem;
     }
 
     .media {
