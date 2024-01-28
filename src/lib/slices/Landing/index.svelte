@@ -27,6 +27,7 @@
   .links {
     display: flex;
     flex-wrap: wrap;
+    margin: 2rem 0 2rem 0;
   }
 
   a {
@@ -39,8 +40,8 @@
     text-align: center;
     text-decoration: none;
 
-    margin: 2rem 0.7rem 2rem 0;
-    padding: 1rem 1.75rem 1rem 1.75rem;
+    margin-right: 0.7rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     
 
     border: 0.125rem solid rgb(0, 0, 0);
