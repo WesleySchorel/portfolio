@@ -41,7 +41,7 @@
     text-decoration: none;
 
     margin-right: 0.7rem;
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 1rem 1rem 1rem 1rem;
     
 
     border: 0.125rem solid rgb(0, 0, 0);
