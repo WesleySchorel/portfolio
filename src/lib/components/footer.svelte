@@ -119,6 +119,7 @@
     height: 17rem;
     object-fit: cover;
     border: 0.7rem solid rgb(255, 255, 255);
+    border-bottom: 2rem solid rgb(255, 255, 255);
     transform: rotate(4deg);
     transition: 0.3s;
   }
@@ -177,6 +178,7 @@
       width: 24rem;
       height: 28rem;
       border: 1.2rem solid rgb(255, 255, 255);
+      border-bottom: 2.5rem solid rgb(255, 255, 255);
     }
 
     .poloroid:hover {
