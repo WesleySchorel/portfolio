@@ -1,5 +1,4 @@
 <script>
-  import { page } from "$app/stores";
   import Tape from "$lib/assets/Tape.svg";
   import BlossomSelfie from "$lib/assets/BlossomSelfie.jpeg";
 </script>
