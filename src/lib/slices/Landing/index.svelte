@@ -7,7 +7,7 @@
   <h1>{@html slice.primary.title}</h1>
 
   <div class="links">
-    <a href="/projects">View projects</a>
+    <a class="primary-link" href="/projects">View projects</a>
     <a href="/blogs">Read blogs</a>
   </div>
 
@@ -17,7 +17,7 @@
 
 <style>
   section {
-    margin: 2rem;
+    margin: 1.5rem;
   }
 
   h1 {
@@ -27,7 +27,12 @@
   .links {
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
+  }
+
+  .primary-link {
+    color: var(--c-opossing-text);
+    background-color: var(--c-opossing-background);
   }
 
   a {
@@ -36,12 +41,13 @@
     flex-direction: column;
 
     color: var(--c-text);
+    background-color: var(--c-background);
     font-size: 1.25rem;
     text-align: center;
     text-decoration: none;
 
     margin-right: 0.7rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     
 
     border: 0.125rem solid rgb(0, 0, 0);
@@ -50,7 +56,7 @@
 
   img {
     width: 100%;
-    height: 20rem;
+    height: 18rem;
     object-fit: cover;
     border-radius: var(--border-radius);
     margin-bottom: 1rem;
