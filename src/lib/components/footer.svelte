@@ -7,7 +7,9 @@
 <footer>
   <div class="text">
     <h2>LET'S CONNECT</h2>
-    <a href="mailto:wesleyschorel@gmail.com" class="mail" target="_blank">wesleyschorel@gmail.com</a>
+    <a href="mailto:wesleyschorel@gmail.com" class="mail" target="_blank"
+      >wesleyschorel@gmail.com</a
+    >
     <a href="https://github.com/WesleySchorel">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +23,10 @@
         />
       </svg>
     </a>
-    <a href="https://www.linkedin.com/in/wesley-schorel-387410299/" target="_blank">
+    <a
+      href="https://www.linkedin.com/in/wesley-schorel-387410299/"
+      target="_blank"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -78,7 +83,7 @@
     margin: 0 0.7rem 1rem 0;
     padding: 1rem;
 
-    border: 0.125rem solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 100rem;
 
     transition: 0.3s;
@@ -97,11 +102,6 @@
     display: flex;
     justify-content: center;
     padding: 5rem 0 4rem 0;
-    transition: 0.3s;
-  }
-
-  .media:hover {
-    transform: rotate(1deg);
   }
 
   .tape {
@@ -121,6 +121,7 @@
     object-fit: cover;
     border: 0.7rem solid rgb(255, 255, 255);
     transform: rotate(4deg);
+    transition: 0.3s;
   }
 
   @media only screen and (min-width: 767px) {
@@ -142,6 +143,7 @@
       color: var(--c-opossing-text);
       padding: 2rem 2rem 2rem 2rem;
       transition: 0.3s;
+      border-width: 2px;
     }
 
     a:hover {
@@ -176,6 +178,10 @@
       width: 24rem;
       height: 28rem;
       border: 1.2rem solid rgb(255, 255, 255);
+    }
+
+    .poloroid:hover {
+      transform: rotate(5deg);
     }
   }
 </style>

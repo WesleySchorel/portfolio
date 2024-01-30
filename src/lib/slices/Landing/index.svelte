@@ -50,7 +50,7 @@
     padding: 0.5rem 1rem 0.5rem 1rem;
     
 
-    border: 0.125rem solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 100rem;
   }
 
@@ -59,16 +59,16 @@
     height: 18rem;
     object-fit: cover;
     border-radius: var(--border-radius);
-    margin-bottom: 1rem;
   }
 
   p {
+    margin: 3rem 0 3rem 0;
     color: var(--c-text);
   }
 
   @media only screen and (min-width: 767px) {
     section {
-      margin: 4rem;
+      margin: 10rem 4rem 4rem 4rem;
     }
 
     h1 {
@@ -76,13 +76,24 @@
       width: 90%;
     }
 
+    .links {
+      margin: 2rem 0 7rem 0;
+    }
+
     a {
       font-size: 2rem;
       padding: 1rem 4rem 1rem 4rem;
+      border-width: 2px;
     }
 
     img {
-      height: 30rem;
+      height: 32rem;
+    }
+
+    p {
+      margin: 8rem 0 8rem 0;
+      font-size: 2.125rem;
+      width: 55ch;
     }
   }
 </style>
