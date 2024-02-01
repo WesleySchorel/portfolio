@@ -68,7 +68,7 @@
 
   @media only screen and (min-width: 767px) {
     section {
-      margin: 4rem 4rem 4rem 4rem;
+      margin: 6rem 4rem 4rem 4rem;
     }
 
     h1 {
@@ -76,7 +76,7 @@
     }
 
     .links {
-      margin: 2rem 0 5rem 0;
+      margin: 2rem 0 4rem 0;
     }
 
     a {
@@ -91,8 +91,8 @@
 
     p {
       margin: 8rem 0 8rem 0;
-      font-size: 2.125rem;
-      width: 55ch;
+      font-size: clamp(1.8rem,5.5vw,2.125rem);
+      width: 80%;
     }
   }
 </style>
