@@ -62,7 +62,7 @@
   }
 
   p {
-    margin: 3rem 0 3rem 0;
+    margin: 5rem 0 5rem 0;
     color: var(--c-text);
   }
 
