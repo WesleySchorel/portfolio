@@ -16,7 +16,6 @@
     background-color: var(--c-background);
     font-size: 1.25rem;
     text-align: center;
-    text-decoration: none;
 
     padding: 0.5rem 1rem 0.5rem 1rem;
     

@@ -79,7 +79,6 @@
     color: var(--c-opossing-text);
     font-size: 1.25rem;
     text-align: center;
-    text-decoration: none;
 
     margin: 0 0.7rem 1rem 0;
     padding: 1rem;
