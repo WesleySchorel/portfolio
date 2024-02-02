@@ -5,15 +5,17 @@
 
 <section>
   <h2>{slice.primary.title}</h2>
-  {#each slice.items as item}
-    <hr>
-    <a href="blogs/{item.blog_link}">
-      <li>
-        <h3>{item.blog_title}</h3>
-        <span>READ BLOG</span>
-      </li>
-    </a>
-  {/each}
+  <ul>
+    {#each slice.items as item}
+      <hr>
+      <a href="blogs/{item.blog_link}">
+        <li>
+          <h3>{item.blog_title}</h3>
+          <span>READ BLOG</span>
+        </li>
+      </a>
+    {/each}
+  </ul>
   <a class="blogs" href="/blogs">More blogs</a>
 </section>
 

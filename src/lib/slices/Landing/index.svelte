@@ -11,7 +11,7 @@
     <a href="/blogs">Read blogs</a>
   </div>
 
-  <img src={slice.primary.hero_image.url} alt=" " />
+  <img src={slice.primary.hero_image.url} alt="" />
   <p>{slice.primary.description}</p>
 </section>
 

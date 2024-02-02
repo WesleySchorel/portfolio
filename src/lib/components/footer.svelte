@@ -10,7 +10,11 @@
       <a href="mailto:wesleyschorel@gmail.com" class="mail" target="_blank"
         >wesleyschorel@gmail.com</a
       >
-      <a href="https://github.com/WesleySchorel">
+      <a
+        href="https://github.com/WesleySchorel"
+        aria-label="Visit my Github page"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -25,6 +29,7 @@
       </a>
       <a
         href="https://www.linkedin.com/in/wesley-schorel-387410299/"
+        aria-label="Visit my Linkedin page"
         target="_blank"
       >
         <svg
@@ -43,7 +48,7 @@
   </div>
 
   <div class="media">
-    <img class="tape" src={Tape} alt=" " />
+    <img class="tape" src={Tape} alt="Tape" />
     <img
       class="poloroid"
       src={BlossomSelfie}
@@ -95,7 +100,7 @@
 
     font-size: 0.7rem;
     color: var(--c-opossing-text);
-    opacity: 0.35;
+    /* opacity: 0.35; */
   }
 
   .media {
