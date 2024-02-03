@@ -17,7 +17,7 @@
 
 <style>
   section {
-    margin: 1rem;
+    margin: 1.25rem;
   }
 
   h1 {

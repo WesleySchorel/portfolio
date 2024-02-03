@@ -21,7 +21,7 @@
 
 <style>
   section {
-    margin: 0 1rem 3rem 1rem;
+    margin: 0 1.25rem 3rem 1.25rem;
     padding: 2rem;
     border-radius: var(--border-radius);
     background-color: var(--c-opossing-background);
