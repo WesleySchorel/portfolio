@@ -51,9 +51,12 @@
 
   li {
     color: var(--c-opossing-text);
-    margin-right: 1rem;
+    margin-right: 0.7rem;
   }
 
+  li:nth-child(5) {
+    transform: rotate(45deg);
+  }
 
   img {
     height: 2.5rem;
@@ -81,8 +84,9 @@
   @media only screen and (min-width: 767px) {
     section {
       margin: 0 4rem 12rem 4rem;
-      padding: 4rem;
+      padding: 5rem;
       border-radius: var(--border-radius);
+      text-align: center;
     }
 
     h2 {
@@ -92,12 +96,32 @@
 
     p {
       font-size: 1.5rem;
-      width: 80%;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      margin-bottom: 4rem;
+    }
+
+    ol {
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      color: var(--c-opossing-text);
+      margin-right: 1.5rem;
+    }
+
+    img {
+      height: 4.5rem;
+      width: 4.5rem;
+      padding: 1rem;
+      border: 2px solid rgb(255, 255, 255);
+      border-radius: 100rem;
     }
 
     a {
       font-size: 1.5rem;
-      margin-top: 2rem;
+      margin-top: 4rem;
       padding: 1rem 4rem 1rem 4rem;
       border-width: 2px;
     }
