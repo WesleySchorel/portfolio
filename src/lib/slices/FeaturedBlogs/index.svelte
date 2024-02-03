@@ -21,9 +21,9 @@
 
 <style>
   section {
-    margin: 0 1.5rem 3rem 1.5rem;
+    margin: 0 1rem 3rem 1rem;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
     background-color: var(--c-opossing-background);
   }
 
@@ -68,7 +68,7 @@
 
     color: var(--c-text);
     background-color: var(--c-background);
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
 
     margin-top: 1rem;
@@ -82,7 +82,7 @@
     section {
       margin: 0 4rem 12rem 4rem;
       padding: 4rem;
-      border-radius: 2.5rem;
+      border-radius: var(--border-radius);
     }
 
     li {
@@ -94,6 +94,14 @@
     h2 {
       font-size: 3rem;
       margin-bottom: 3rem;
+    }
+
+    a {
+      transition: 0.3s;
+    }
+
+    a:hover {
+      opacity: 0.75;
     }
 
     h3 {

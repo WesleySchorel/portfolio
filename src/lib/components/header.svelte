@@ -10,7 +10,7 @@
 
   a {
     position: absolute;
-    right: 1.5rem;
+    right: 1rem;
 
     color: var(--c-text);
     background-color: var(--c-background);

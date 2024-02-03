@@ -153,7 +153,7 @@
     }
 
     a:hover {
-      border-color: var(--c-opossing-hover);
+      opacity: 0.75;
     }
 
     .mail {
