@@ -1,21 +1,24 @@
 <script>
   /** @type {import("@prismicio/client").Content.DevelopmentProcessSlice} */
+  import Search from "$lib/assets/i-search.png";
+  import Pallete from "$lib/assets/i-pallete.png";
+  import Gear from "$lib/assets/i-gear.png";
+  import Bug from "$lib/assets/i-bug.png";
+  import Rocket from "$lib/assets/i-rocket.png";
   export let slice;
 </script>
 
 <section>
-
   <h2>{slice.primary.title}</h2>
-
+  <p>{slice.primary.description}</p>
   <ol>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li><img src={Search} alt="Analyse" /></li>
+    <li><img src={Pallete} alt="Design" /></li>
+    <li><img src={Gear} alt="Develop" /></li>
+    <li><img src={Bug} alt="Test" /></li>
+    <li><img src={Rocket} alt="Deploy" /></li>
   </ol>
 
-  <p>{slice.primary.description}</p>
   <a href="/blogs">View projects</a>
 </section>
 
@@ -34,6 +37,12 @@
     margin-bottom: 1.8rem;
   }
 
+  p {
+    color: var(--c-opossing-text);
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+  }
+
   ol {
     display: flex;
     flex: row;
@@ -45,9 +54,13 @@
     margin-right: 1rem;
   }
 
-  p {
-    color: var(--c-opossing-text);
-    font-size: 1rem;
+
+  img {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100rem;
   }
 
   a {
@@ -75,7 +88,6 @@
     h2 {
       font-size: 3rem;
       margin-bottom: 3rem;
-      /* text-align: center; */
     }
 
     p {
