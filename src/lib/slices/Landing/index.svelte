@@ -61,7 +61,7 @@
   }
 
   p {
-    margin: 5rem 0 5rem 0;
+    margin: 4rem 0 5rem 0;
     color: var(--c-text);
   }
 
@@ -89,7 +89,7 @@
     }
 
     p {
-      margin: 8rem 0 8rem 0;
+      margin: 7rem 0 8rem 0;
       font-size: clamp(1.8rem,5.5vw,2.125rem);
       width: 80%;
     }

@@ -185,6 +185,31 @@ export type AllDocumentTypes =
   | ProjectDocument;
 
 /**
+ * Primary content in *DevelopmentProcess → Primary*
+ */
+export interface DevelopmentProcessSliceDefaultPrimary {
+  /**
+   * title field in *DevelopmentProcess → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: development_process.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * description field in *DevelopmentProcess → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: development_process.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+}
+
+/**
  * Default variation for DevelopmentProcess Slice
  *
  * - **API ID**: `default`
@@ -193,7 +218,7 @@ export type AllDocumentTypes =
  */
 export type DevelopmentProcessSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
+  Simplify<DevelopmentProcessSliceDefaultPrimary>,
   never
 >;
 
@@ -453,6 +478,7 @@ declare module "@prismicio/client" {
       ProjectDocumentData,
       AllDocumentTypes,
       DevelopmentProcessSlice,
+      DevelopmentProcessSliceDefaultPrimary,
       DevelopmentProcessSliceVariation,
       DevelopmentProcessSliceDefault,
       FeaturedBlogsSlice,
