@@ -38,7 +38,7 @@
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: var(--c-text);
   }
 
@@ -73,7 +73,7 @@
   }
 
   span {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--c-text);
   }
 
@@ -105,6 +105,14 @@
 
     img {
       height: 20rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 1.5rem;
     }
   }
 </style>
