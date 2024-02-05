@@ -26,13 +26,6 @@
             "constraint": {},
             "thumbnails": []
           }
-        },
-        "description": {
-          "type": "Text",
-          "config": {
-            "label": "description",
-            "placeholder": ""
-          }
         }
       },
       "items": {}

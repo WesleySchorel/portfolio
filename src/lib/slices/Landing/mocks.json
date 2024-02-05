@@ -9,7 +9,6 @@
 				"type": "Text"
 			},
 			"hero_image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
@@ -27,12 +26,10 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
-			},
-			"description": {
-				"__TYPE__": "FieldContent",
-				"value": "partly",
-				"type": "Text"
 			}
 		},
 		"items": []

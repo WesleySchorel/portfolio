@@ -10,7 +10,54 @@
       "docURL": "...",
       "version": "initial",
       "description": "Default",
-      "imageUrl": ""
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "description",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "project_img": {
+          "type": "Image",
+          "config": {
+            "label": "project_img",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "project_title": {
+          "type": "Text",
+          "config": {
+            "label": "project_title",
+            "placeholder": ""
+          }
+        },
+        "project_description": {
+          "type": "Text",
+          "config": {
+            "label": "project_description",
+            "placeholder": ""
+          }
+        },
+        "project_link": {
+          "type": "Text",
+          "config": {
+            "label": "project_link",
+            "placeholder": ""
+          }
+        }
+      }
     }
   ]
 }

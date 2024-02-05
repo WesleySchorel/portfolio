@@ -12,12 +12,12 @@
   </div>
 
   <img src={slice.primary.hero_image.url} alt="" />
-  <p>{slice.primary.description}</p>
+  <!-- <p>{slice.primary.description}</p> -->
 </section>
 
 <style>
   section {
-    margin: 1.25rem;
+    margin: 0 1.25rem 2rem 1.25rem;
   }
 
   h1 {
@@ -60,10 +60,10 @@
     border-radius: var(--border-radius);
   }
 
-  p {
+  /* p {
     margin: 4rem 0 5rem 0;
     color: var(--c-text);
-  }
+  } */
 
   @media only screen and (min-width: 767px) {
     section {
@@ -88,10 +88,10 @@
       height: 32rem;
     }
 
-    p {
-      margin: 7rem 0 8rem 0;
+    /* p {
+      margin: 4rem 0 16rem 0;
       font-size: clamp(1.8rem,5.5vw,2.125rem);
       width: 80%;
-    }
+    } */
   }
 </style>

@@ -24,7 +24,7 @@
 
 <style>
   section {
-    margin: 0 1.25rem 5rem 1.25rem;
+    margin: 0 1.25rem 8rem 1.25rem;
     padding: 2rem;
     border-radius: var(--border-radius);
     background-color: var(--c-opossing-background);
@@ -83,7 +83,7 @@
 
   @media only screen and (min-width: 767px) {
     section {
-      margin: 0 4rem 12rem 4rem;
+      margin: 0 4rem 16rem 4rem;
       padding: 5rem;
       border-radius: var(--border-radius);
       text-align: center;

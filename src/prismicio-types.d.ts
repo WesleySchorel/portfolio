@@ -310,6 +310,76 @@ export type FeaturedBlogsSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *FeaturedProjects → Primary*
+ */
+export interface FeaturedProjectsSliceDefaultPrimary {
+  /**
+   * title field in *FeaturedProjects → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured_projects.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * description field in *FeaturedProjects → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured_projects.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *FeaturedProjects → Items*
+ */
+export interface FeaturedProjectsSliceDefaultItem {
+  /**
+   * project_img field in *FeaturedProjects → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured_projects.items[].project_img
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  project_img: prismic.ImageField<never>;
+
+  /**
+   * project_title field in *FeaturedProjects → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured_projects.items[].project_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  project_title: prismic.KeyTextField;
+
+  /**
+   * project_description field in *FeaturedProjects → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured_projects.items[].project_description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  project_description: prismic.KeyTextField;
+
+  /**
+   * project_link field in *FeaturedProjects → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured_projects.items[].project_link
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  project_link: prismic.KeyTextField;
+}
+
+/**
  * Default variation for FeaturedProjects Slice
  *
  * - **API ID**: `default`
@@ -318,8 +388,8 @@ export type FeaturedBlogsSlice = prismic.SharedSlice<
  */
 export type FeaturedProjectsSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
-  never
+  Simplify<FeaturedProjectsSliceDefaultPrimary>,
+  Simplify<FeaturedProjectsSliceDefaultItem>
 >;
 
 /**
@@ -362,16 +432,6 @@ export interface LandingSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   hero_image: prismic.ImageField<never>;
-
-  /**
-   * description field in *Landing → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: landing.primary.description
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  description: prismic.KeyTextField;
 }
 
 /**
@@ -487,6 +547,8 @@ declare module "@prismicio/client" {
       FeaturedBlogsSliceVariation,
       FeaturedBlogsSliceDefault,
       FeaturedProjectsSlice,
+      FeaturedProjectsSliceDefaultPrimary,
+      FeaturedProjectsSliceDefaultItem,
       FeaturedProjectsSliceVariation,
       FeaturedProjectsSliceDefault,
       LandingSlice,

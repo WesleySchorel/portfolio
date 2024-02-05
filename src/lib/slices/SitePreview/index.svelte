@@ -11,7 +11,7 @@
 <style>
   section {
     text-align: center;
-    margin: 0 1.25rem 5rem 1.25rem;
+    margin: 0 1.25rem 8rem 1.25rem;
   }
 
   h2 {
