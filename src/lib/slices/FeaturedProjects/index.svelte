@@ -38,7 +38,9 @@
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
     color: var(--c-text);
   }
 
