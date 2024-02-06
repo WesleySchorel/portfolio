@@ -26,6 +26,13 @@
           "placeholder": ""
         }
       },
+      "blog_post": {
+        "type": "Text",
+        "config": {
+          "label": "blog_post",
+          "placeholder": ""
+        }
+      },
       "read_time": {
         "type": "Text",
         "config": {

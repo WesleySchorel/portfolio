@@ -31,6 +31,17 @@ interface BlogDocumentData {
   description: prismic.KeyTextField;
 
   /**
+   * blog_post field in *blog*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.blog_post
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  blog_post: prismic.KeyTextField;
+
+  /**
    * read_time field in *blog*
    *
    * - **Field Type**: Text
